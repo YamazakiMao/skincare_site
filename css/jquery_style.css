@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:100%;
+    margin-right:0 auto;
+}
+
+.slider-img {
+    width:100%;/*スライダー内の画像を横幅100%に*/
+    height:auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin:0 10px;
+}
+
+
+/*戻る、次へ矢印の位置*/
+.slider {
+    position: relative;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    cursor: pointer;
+    position: absolute;
+    bottom: -76px;
+    left: 0;
+    transform: translate(0,-50%);
+    width: 60px;
+    z-index: 1;
+    transform: scale(-1, 1);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    cursor: pointer;
+    position: absolute;
+    bottom: -100px;
+    left: 60px;
+    transform: translate(0,-50%);
+    width: 60px;
+    z-index: 1;
+}
+

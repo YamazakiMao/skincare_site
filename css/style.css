@@ -1,0 +1,817 @@
+@charset "utf-8";
+
+/* リセットcss */
+html {
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    word-break: normal;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    font-family: noto-sans-cjk-jp,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+*,
+::before,
+::after {
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+}
+
+
+* {
+    padding: 0; 
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #F1EDE4;
+    font-family: 游ゴシック,sans-serif;
+}
+
+ul,li,dl,dd,dt,a {
+    text-decoration: none;
+    list-style: none;
+    color: inherit; 
+}
+
+li, a {
+    cursor: pointer;
+}
+
+header {
+    padding: 5%;
+}
+
+section,footer {
+    padding: 10%;
+}
+
+h2 {
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*=====================
+        ヘッダー 
+======================*/
+.hamburger, .globalMenuSp {
+    display: none;
+}
+
+header {
+    position: relative;
+}
+
+.header-cover {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left {
+    width: 35%;
+    position: relative;
+}
+
+.headerLeft-bg-img {
+    background-image: url(../img/object.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 500px;
+}
+
+
+.header-text {
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+    color: #fff;
+}
+
+.header-text h1 {
+    font-size: 10vw;
+    letter-spacing: 0.8rem;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.header-text p {
+    font-size: 3rem;
+}
+
+.header-right {
+    width: 60%;
+}
+
+.background-image img{
+    width: 100%;
+    object-fit:cover;
+}
+
+.sp-header-main-img {
+    display: none;
+}
+
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5% 5% 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navigation li {
+    font-size: 2rem;
+    margin-left: 5%;
+    font-family: Arial, sans-serif;
+}
+
+.background-image {
+    position: relative;
+}
+
+
+
+
+
+/* ==================
+    aboutコンテンツ 
+====================*/
+
+.about-contents {
+    width: 100%;
+    background-color: #fff;
+}
+
+.about-contents h2 {
+    font-size: 6rem;
+}
+
+.about-cover-top {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.about-cover-top-left {
+    width: 50%;
+}
+
+.about-cover-top img {
+    width: 500px;
+    border-radius: 20px;
+}
+
+.about-cover-top-right {
+    width: 50%;
+    text-align: center;
+}
+
+.about-cover-top-right h3 {
+    font-size: 3rem;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.about-cover-top-right h3::after {
+    content: '';
+    width: 100px;
+    height: 1px;
+    display: inline-block;
+    background-color: #333;
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 55px)
+}
+
+.subtitle {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.p-text-cover {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.about-cover-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-cover-bottom-left {
+    width: 40%;
+    text-align: center;
+}
+
+.about-cover-bottom-left h3 {
+    font-size: 3rem;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.about-cover-bottom-left h3::after {
+    content: '';
+    width: 100px;
+    height: 1px;
+    display: inline-block;
+    background-color: #333;
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 55px)
+}
+
+.about-cover-bottom-right {
+    text-align: right;
+    width: 60%;
+}
+
+.about-cover-bottom-right img {
+    width: 100%;
+    height: 380px;
+    object-fit:cover;
+    border-radius: 20px;
+}
+
+
+/* ==================
+    productコンテンツ 
+====================*/
+
+.product-contents {
+    width: 100%;
+}
+
+.product-contents h2 {
+    font-size: 6rem;
+}
+
+.product-main-image {
+    position: relative;
+}
+
+.product-main-bg{
+    width: 100%;
+    height: 600px;
+    object-fit:cover;
+}
+
+.whiteLily-image {
+    position: relative;
+}
+
+.bitamin-image {
+    position: relative;
+}
+
+.collagen-image {
+    position: relative;
+}
+
+
+.point-circle {
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+
+.circle{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #F2B830;
+}
+
+.circle span {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width :80px;
+    color: #fff;
+}
+
+.product_detail {
+    margin: 0 auto;
+    background-color: #F2E4C2;
+    width: 80%;
+    padding: 5% 0;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.product-detail-table {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    table-layout: fixed;
+}
+
+.product-detail-table img {
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+    border-radius: 20px;
+}
+
+.product-title {
+    font-weight: bold;
+}
+
+.product-text {
+    padding: 0 30px;
+}
+
+.sp-title, .sp-text {
+    display: none;
+}
+
+
+/* ==================
+    newsコンテンツ 
+====================*/
+
+.news-contents {
+    width: 100%;
+    height: 600px;
+}
+
+.news-contents h2 {
+    font-size: 6rem;
+}
+
+.slider-text {
+    font-size: 1rem;
+    margin: 3px 0;
+}
+
+.slider-date {
+    font-size: 0.8rem;
+    color: #F2B830;
+}
+
+
+/* ==================
+    footer
+====================*/
+
+footer {
+    width: 100%;
+    margin-top: 5%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contents ul{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+}
+
+.footer-info ul{
+    line-height: 2.5rem;
+}
+
+.footer-sns ul {
+    height: 152px;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-sns ul li {
+    margin-right: 10px;
+}
+
+.sp-copyright {
+    display: none;
+}
+
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+    
+    header {
+        padding: 5% 5% 0 5%;
+    }
+    
+    section,footer {
+        padding: 5%;
+    }
+
+    .about-cover-top img {
+        width: 400px;
+        border-radius: 20px;
+    }
+
+    .about-cover-top-left {
+        width: 100%;
+    }
+
+
+    .p-text-cover {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+
+
+    .product_detail {
+        width: 100%;
+        padding: 5% 0;
+        position: absolute;
+        top: 10%;
+        left: 0;
+    }
+
+    .product-main-image {
+        width: 100%;
+        height: 600px;
+    }
+
+    .product-main-image .product-main-bg{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 748px) {
+	/* 768px以下に適用されるCSS（スマホ用） */
+
+    #header{
+        /*fixedで上部固定*/
+    position: fixed;
+    height: 70px;
+    width:100%;
+    z-index: 999;/*最前面へ*/
+    /*以下はレイアウトのためのCSS*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255,165,0, 0.5); 
+    color:#fff;
+    text-align: center;
+    padding: 20px;
+}
+
+    /* ハンバーガーメニューここから */
+    .hamburger, .globalMenuSp {
+        display: block;
+    }
+
+    .hamburger {
+        display : block;
+        position: fixed;
+        z-index : 3;
+        right : 13px;
+        top   : 12px;
+        width : 42px;
+        height: 42px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .hamburger span {
+        display : block;
+        position: absolute;
+        width   : 30px;
+        height  : 2px ;
+        left    : 6px;
+        background : #fff;
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition   : 0.5s ease-in-out;
+        transition        : 0.5s ease-in-out;
+    }
+        
+    .hamburger span:nth-child(1) {
+        top: 10px;
+    }
+        .hamburger span:nth-child(2) {
+        top: 20px;
+    }
+        .hamburger span:nth-child(3) {
+        top: 30px;
+    }
+        
+        /* ナビ開いてる時のボタン */
+    .hamburger.active span:nth-child(1) {
+        top : 16px;
+        left: 6px;
+        background : #fff;
+        -webkit-transform: rotate(315deg);
+        -moz-transform   : rotate(315deg);
+        transform        : rotate(315deg);
+    }
+        
+    .hamburger.active span:nth-child(2),
+    .hamburger.active span:nth-child(3) {
+        top: 16px;
+        background : #fff;
+        -webkit-transform: rotate(-315deg);
+        -moz-transform   : rotate(-315deg);
+        transform        : rotate(-315deg);
+    }
+        
+    nav.globalMenuSp {
+        position: fixed;
+        z-index : 2;
+        top  : 0;
+        left : 0;
+        color: #fff;
+        background: rgba(0,0,0,0.7);
+        text-align: center;
+        width: 100%;
+        opacity: 0;
+        transition: opacity .6s ease, visibility .6s ease;
+    }
+        
+        nav.globalMenuSp ul {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        }
+        
+    nav.globalMenuSp ul li {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        transition: .4s all;
+    }
+
+    nav.globalMenuSp ul li:last-child {
+        padding-bottom: 0;
+    }
+    
+    nav.globalMenuSp ul li:hover{
+        background :#ddd;
+    }
+        
+    nav.globalMenuSp ul li a {
+        display: block;
+        color: #fff;
+        padding: 1em 0;
+        text-decoration :none;
+    }
+        
+        /* このクラスを、jQueryで付与・削除する */
+    nav.globalMenuSp.active {
+        opacity: 100;
+        
+    }
+
+    /* ハンバーガーメニューここまで */
+
+    /*　上に上がる動き　*/
+
+#header.UpMove{
+    animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+    from {
+    opacity: 1;
+    transform: translateY(0);
+    }
+    to {
+    opacity: 0;
+    transform: translateY(-100px);
+    }
+}
+    /*　下に下がる動き　*/
+
+#header.DownMove{
+    animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime{
+    from {
+    opacity: 0;
+    transform: translateY(-100px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+    header {
+        position: relative;
+        padding: 0;
+    }
+    
+    .header-cover {
+        display: block;
+    }
+    
+    .header-left img {
+        display: none;
+    }
+    
+    
+    .header-text {
+        position: absolute;
+        left: 5%;
+        bottom: 15%;
+        color: #fff;
+    }
+    
+    .header-text h1 {
+        font-size: 10vw;
+        letter-spacing: 0.8rem;
+        font-family: futura-pt, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+    .header-text p {
+        font-size: 3rem;
+    }
+    
+    .header-right {
+        width: 100%;
+    }
+
+    .background-image {
+        background-color: #fff;
+    }
+    
+    .pc-header-main-img{
+        display: none;
+    }
+
+    .sp-header-main-img {
+        display: block;
+    }
+    
+    .navigation{
+        display: none;
+    }
+    
+    .background-image {
+        position: relative;
+    }
+
+    .about-cover-top {
+        display: block;
+        margin-bottom: 50px;
+    }
+    .about-cover-bottom {
+        display: block;
+    }
+
+    .about-cover-top-left {
+        margin-bottom: 50px;
+    }
+
+    .about-cover-top img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .about-cover-top-right {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .about-cover-bottom-left, .about-cover-bottom-right {
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .point-circle {
+        position: absolute;
+        top: -40px;
+        left: 150px;
+    }
+    
+    .circle{
+        position: relative;
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #F2B830;
+    }
+    
+    .circle span {
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width :80px;
+        color: #fff;
+    }
+    
+    .product_detail {
+        margin: 0 auto;
+        background-color: #F2E4C2;
+        width: 100%;
+        padding: 10% 0;
+        position: absolute;
+        top: 10%;
+        left: 0;
+    }
+    
+    .product_detail table {
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+        table-layout: fixed;
+    }
+    
+    .whiteLily-image img {
+        width: 200px;
+        height: 200px;
+        object-fit:cover;
+        border-radius: 20px;
+    }
+    
+    .product-text {
+        padding: 0 30px;
+    }
+
+    .product-detail-table tr td {
+        display: block;
+        width: 100%;
+    }
+
+    .product-text {
+        padding: 0;
+    }
+
+    .second, .last {
+        display: none;
+    }
+
+    .sp-title, .sp-text {
+        display: block;
+    }
+
+    .sp-title {
+        font-weight: bold;
+    }
+
+    .sp-text {
+        margin-bottom: 50px;
+    }
+
+    .news-contents {
+        margin-top: 600px;
+    }
+
+    .footer-left, .footer-contents, .footer-info {
+        display: none;
+    }
+
+    .footer-sns {
+        margin: 0 auto;
+    }
+
+    .footer-sns ul {
+        height: 100px;
+        display: flex;
+        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    .footer-sns ul li {
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .sp-copyright {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+
+    .point-circle {
+        position: absolute;
+        top: -40px;
+        left: 0;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
