@@ -49,16 +49,6 @@ return false;
 });
 
 //ふわっと表示
-function load_effect() {
-    var element = document.getElementsByClassName('load-fade');
-    if(!element) return; // 要素がない場合は終了
-    
-    for(var i = 0; i < element.length; i++) { 
-      element[i].classList.add('is-show');
-    }
-  }
-  setTimeout(load_effect, 600); // 600ミリ秒経過後に実行
-
 
   function scroll_effect() {
     var element = document.getElementsByClassName('scroll-up');
